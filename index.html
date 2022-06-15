@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dinastia jaguar</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contactanos</a></li>
+            <li><a href="#">Sucursales</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">Dinastia Jaguar</h2>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <video src="bg.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Artes Marciales</h2>
+            <h3>Taekwondo y Hapkido</h3>
+            <p>Buscamos la excelencia , integracion armonica entre competencia y arte marcial, 
+                darte una profesion como profesor (a) y entrenador (a) Danos la oportunidad de encontrar el Artemarcista  
+                que hay en ti ! No esperes mas ! </p>
+                <a href="#">Informacion</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/omtkddinastiajaguar"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle')
+            var banner = document.querySelector('.banner')
+            menuToggle.classList.toggle('active');
+            banner.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
